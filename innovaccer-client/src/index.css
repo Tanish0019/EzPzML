@@ -1,13 +1,154 @@
+:root {
+  --bg-color: white;
+  --primary: #005073;
+  --secondary: #189ad3;
+}
+html, body {
+  min-height: 100vh;
+  position: relative;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  font-family: Verdana, Helvetica, sans-serif;
+  box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+#root {
+  height: 100vh;
+}
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+}
+
+.container {
+  padding-bottom: 65px;
+}
+
+.home-container.container {
+  height: 100%;
+}
+ 
+footer {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  color: white;
+  background-color: var(--primary);
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+}
+
+nav.navbar {
+  height: 60px;
+  padding: 0 10px;
+  background-color: var(--primary);
+  color: white;
+}
+
+nav img {
+  height: 50px;
+  width: auto;
+}
+
+
+.navbar-brand, nav a.nav-link {
+  color: white;
+}
+
+.card .card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--secondary);
+  color: white;
+}
+
+.card {
+  height: 250px;
+  border: none;
+  width: 300px;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+       -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+  transition: all 0.5s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.08);
+}
+
+.card .card-body {
+  border-radius: 10px;
+}
+
+.card .card-body .card-title {
+  font-size: 35px;
+  letter-spacing: 0.2em;
+  padding: 0 20px 20px 20px;
+  text-decoration: none;
+}
+
+.card .card-body .card-text {
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+}
+
+.card .card-body .card-text:hover, .card .card-body .card-title:hover {
+  text-decoration: none !important;
+}
+
+.deploy-container {
+  padding-top: 10px;
+}
+
+.deploy-container h3 {
+  font-weight: 700;
+  letter-spacing: 0.07em;
+}
+
+.dropzone-model {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid black;
+}
+
+.dropzone-model input{
+	width: 100%;
+	height: 100%;
+}
+
+.dropzone-container {
+  position: relative;
+  margin: 30px auto;
+  height: 200px;
+  width: 200px;
+}
+
+.main-spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  /* display: block; */
+  text-align: left;
+  width: 50%;
+  white-space: pre-wrap   
 }
